@@ -35,8 +35,9 @@ const isTrash = (length, skip) => {
         break;
          case 'heartbreak on a full moon':
         alert('Why are you wondering if a Chris Brown album is trash?')
-        retno
+        return
         break;
+        
          case 'x':
         alert('Why are you wondering if a Chris Brown album is trash?')
         return;
@@ -105,6 +106,7 @@ const isTrash = (length, skip) => {
         alert('Hell no')
         return;
         break;
+        
     }
 
     var response = Math.floor(Math.random() * 10);
@@ -132,7 +134,7 @@ const isTrash = (length, skip) => {
         break;
         case 7:
             response = "I think you and me both know that it's trash"
-
+        }
 // Decently comprehensive if/else statement to check all inputs. 
     if (length === "" || skip === "") {
         alert("You didn't put anything. What do you want me to do?")
@@ -145,11 +147,11 @@ const isTrash = (length, skip) => {
     } else if (length < 12 && skip > 4 ) {
         alert(response)
     } else if (length < 15 && skip > 6) {
-        alert(`Sorry, ${name} is trash.`)
+        alert(response)
     } else if (length < 20 && skip > 9) {
-        alert(`Sorry, ${name} is trash.`)
+        alert(response)
     } else if (length <= 30 && skip > 14) {
-        alert(`Sorry, ${name} is trash.`)
+        alert(response)
     } else if (length === 69) {
         alert('Nice.')
     } else if (length === 420) {
